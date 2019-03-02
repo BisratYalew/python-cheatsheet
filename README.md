@@ -161,7 +161,7 @@ R|S     Match either regex R or regex S.
 After '[', enclose a set, the only special chars are:
 ```
 ```
-]   End the set, if not the 1st char
+]   End the set, if not the first char
 ```
 ```
 -   A range, eg. a-c matches a, b or c
@@ -169,7 +169,15 @@ After '[', enclose a set, the only special chars are:
 ```
 ^   Negate the set only if it is the 1st char
 ```
-
+## Regular Expression Examples
+### re.findall()
+```python
+# split all string from a sentence
+>>> import re
+>>> source = "Python is great!"
+>>> re.findall('[\w]+', source)
+['Python', 'is', 'great!']
+```
 
 <br>
 <br>
