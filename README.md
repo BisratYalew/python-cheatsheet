@@ -185,6 +185,14 @@ pip install pyperclip
 <class 'str'>
 
 ```
+#### In python3 binary mode
+``` python
+>>> with open("/etc/hosts", "rb") as f:
+...     content = f.read()
+...
+>>> print(type(content))
+<class 'bytes'>
+```
 
 <br><br>
 
