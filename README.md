@@ -51,3 +51,23 @@ True
 >>> 'Python' not in 'python and javascript' ## Matches case
 False
 ```
+
+#### The in and not in Operators with list
+```python 
+>>> a = ['P', 'y', 't', 'h', 'o', 'n']
+>>> 'p' in a
+False
+>>> 'P' in a
+True
+>>> 'o' in a
+True
+
+## On Integers List
+>>> a = [1, 2, 3, 5]
+>>> 5 in a
+True
+>>> 4 in a
+False
+>>> 1 in a
+True
+```
