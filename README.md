@@ -180,7 +180,7 @@ After '[', enclose a set, the only special chars are:
 ```
 
 ### Match hex color value
-```python
+```python 
 >>> re.match('^#?([a-f0-9]{6}|[a-f0-9]{3})$', '#ffffff')
 <_sre.SRE_Match object at 0x0000000002F04120>
 >>> re.match('^#?([a-f0-9]{6}|[a-f0-9]{3})$', '#cdcdcd')
