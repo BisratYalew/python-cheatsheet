@@ -327,6 +327,23 @@ re.match('^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$',
 ...          'check@example.com')
 <_sre.SRE_Match object at 0x0000000002EA3180>
 ```
+## Socket
+### Get Hostname
+```python
+>>> import socket
+>>> socket.gethostname()
+'root@bisratyalew'
+
+>>> hostname = socket.gethostname()
+
+>>> socket.gethostbyname('localhost')
+'127.0.0.1'
+
+>>> socket.gethostbyname(hostname) ### Returns ip address
+'192.168.1.3'
+
+```
+
 
 <br>
 <br>
@@ -339,3 +356,6 @@ Feel free to contribute and send pull requests
 
 * [BisratYalew](https://bisratyalew.github.io)
 
+## Licence
+
+#### MIT
