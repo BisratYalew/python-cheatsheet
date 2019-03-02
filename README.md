@@ -11,6 +11,16 @@ I have created this cheatsheet with intention of collecting python code snippets
 
 
 
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+
+
 String
 ------
 
