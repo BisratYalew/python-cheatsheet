@@ -194,7 +194,26 @@ pip install pyperclip
 <class 'bytes'>
 ```
 
+
+### In python2
+```python
+## The content of the file is a byte string, not a Unicode string.
+>>> with open("/etc/passwd") as f:
+...    content = f.read()
+>>> print(type(content))
+<type 'str'>
+>>> print(type(content.decode("utf-8")))
+<type 'unicode'>
+```
+
+### Readline
+
+
+
+
 <br><br>
+
+
 
 # Advanced
 
