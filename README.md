@@ -123,3 +123,12 @@ pip install pyperclip
 'Hello World'
 ```
 
+
+## Contributing
+
+Feel free to contribute and send pull requests
+
+## Author
+
+* [BisratYalew](https://bisratyalew.github.io)
+
