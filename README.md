@@ -179,6 +179,39 @@ After '[', enclose a set, the only special chars are:
 ['Python', 'is', 'great!']
 ```
 
+### Match hex color value
+```python
+>>> re.match('^#?([a-f0-9]{6}|[a-f0-9]{3})$', '#ffffff')
+<_sre.SRE_Match object at 0x0000000002F04120>
+>>> re.match('^#?([a-f0-9]{6}|[a-f0-9]{3})$', '#cdcdcd')
+<_sre.SRE_Match object at 0x0000000002EA3160>
+```
+
+
+### Match username doesn't have any special characters
+```python
+>>> re.match('^[a-zA-Z0-9-_]{3,16}$', 'Foo') is not None
+True
+>>> re.match('^\w|[-_]{3,16}$', 'Foo') is not None
+True
+```
+
+
+### Match hex color value
+```python
+
+```
+
+
+### Match hex color value
+```python
+
+```
+
+### Match hex color value
+```python
+
+```
 <br>
 <br>
 
