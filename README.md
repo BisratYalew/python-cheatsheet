@@ -9,28 +9,63 @@ Python Cheatsheet
 I have created this cheatsheet with intention of collecting python code snippets that I used on my projects/programs and from the internet for reducing coding hours and making other developers life easier.
 
 
+# Basic
+
+## [String](#String)
+
+- [strip](#strip())
+- [lstrip](#lstrip())
+- [rstrip](#rstrip())
+- [upper](#the-upper(),-lower(),-isupper(),-islower()-string-methods)
+- [isupper](#the-upper(),-lower(),-isupper(),-islower()-string-methods)
+- [lower](#the-upper(),-lower(),-isupper(),-islower()-string-methods)
+- [islower](#the-upper(),-lower(),-isupper(),-islower()-string-methods)
+- [in](#the-upper(),-lower(),-isupper(),-islower()-string-methods)
+- [not in](#the-upper(),-lower(),-isupper(),-islower()-string-methods)
+
+- [ord](#ord())
+- [Template Strings](#template-strings)
+- [Pyperclip module](#pyperclip)
+
+<br><br>
+
+# Intermediate
 
 
-<br>
-<br>
+## [File](#file)
 
 
-<br>
-<br>
+- [Read File](#read-a-file)
+- [Write a File](#write-a-file)
+- [Copy File](#copy-a-file)
+- [Move File](#move-a-file)
+- [Readline](#readline)
+
+
+
+<br><br><br><br>
 
 
 
 
 String
 ------
-
+### strip()
 
 ```python
 >>> check = '    Python is great!     '  # removes characters from both left and right based on the argument
 >>> check.strip()
 'Python is great'
+```
+
+### lstrip()
+```python
 >>> check.lstrip()
 'Python is great!     ' ## removes characters from left based on the argument
+```
+
+### rstrip()
+```python
 >>> check.rstrip() ## removes characters from left based on the argument
 '     Python is great!'
 ```
@@ -117,7 +152,7 @@ False
 'Python is great!'
 ```
 
-### Pyperclip module
+### Pyperclip
 ##### <i>Pyperclip is python library that help us easily copy and paste string</i>
 
 ##### First Install it using pip
@@ -132,6 +167,28 @@ pip install pyperclip
 >>> pyperclip.paste()
 'Hello World'
 ```
+
+<br><br>
+
+
+# Intermediate
+
+## File
+
+### Read a file
+### In Python 3, If files do not open in binary mode, the encoding will be determined by ```locale.getpreferredencoding(False)``` or user's input.
+```python
+>>> with open("/etc/hosts", encoding="utf-8") as f:
+...     content = f.read()
+...
+>>> print(type(content))
+<class 'str'>
+
+```
+
+<br><br>
+
+# Advanced
 
 ## Regular Expressions
 Non-special chars match themselves. Exceptions are special characters:
@@ -190,28 +247,20 @@ After '[', enclose a set, the only special chars are:
 
 ### Match username doesn't have any special characters
 ```python
->>> re.match('^[a-zA-Z0-9-_]{3,16}$', 'Foo') is not None
+>>> re.match('^[a-zA-Z0-9-_]{3,16}$', 'Check') is not None
 True
->>> re.match('^\w|[-_]{3,16}$', 'Foo') is not None
-True
+>>> re.match('^\w|[-_]{3,16}$', 'che%ck') is not None
+False
 ```
 
 
-### Match hex color value
+### Match email address format
 ```python
-
+re.match('^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$',
+...          'check@example.com')
+<_sre.SRE_Match object at 0x0000000002EA3180>
 ```
 
-
-### Match hex color value
-```python
-
-```
-
-### Match hex color value
-```python
-
-```
 <br>
 <br>
 
