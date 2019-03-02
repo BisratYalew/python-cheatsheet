@@ -134,6 +134,9 @@ pip install pyperclip
 ```
 
 
+<br>
+<br>
+
 ## Contributing
 
 Feel free to contribute and send pull requests
