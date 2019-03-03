@@ -9,7 +9,6 @@
 - [Arguments](#arguments)
 - [Decorator](#lambda)
 - [Generator](#generator)
-- [Annotation](#lambda)
 
 
 <br><br>
