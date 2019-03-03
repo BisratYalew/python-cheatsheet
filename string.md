@@ -135,3 +135,6 @@ pip install pyperclip
 >>> pyperclip.paste()
 'Hello World'
 ```
+
+
+### [Back To Top](#python-functions)
