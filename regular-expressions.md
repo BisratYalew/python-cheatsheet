@@ -2,6 +2,7 @@
 # Regular Expressions
 Non-special chars match themselves. Exceptions are special characters:
 
+<br><br>
 ```
 \       Escape special char or start a sequence.
 ```
