@@ -4,9 +4,9 @@
 
 - [Lambda](#lambda)
 - [Declare Function](#lambda)
-- [Document Function](#document-function)
+- [Document Function](#document-a-function)
 - [Get Function Name](#get-function-name)
-- [Arguments](#lambda)
+- [Arguments](#arguments)
 - [Decorator](#lambda)
 - [Generator](#generator)
 - [Annotation](#lambda)
@@ -105,6 +105,7 @@ def count(start, step):
 
 ```python
 >>> from functools import wraps
+
 >>> def decorator_func(func):
 ...     @wraps(func)
 ...     def wrapper(*args, **kwargs):
@@ -114,12 +115,12 @@ def count(start, step):
 ...         return ret
 ...     return wrapper
 ...
->>> @decorator
-... def example():
-...     print("Inside example function.")
+>>> @decorator_func
+... def check():
+...     print("Inside check function.")
 ...
->>> example()
-Before calling example.
-Inside example function.
-After calling example.
+>>> check()
+Before calling check.
+Inside check function.
+After calling check.
 ```
