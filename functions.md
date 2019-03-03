@@ -8,7 +8,7 @@
 - [Get Function Name](#get-function-name)
 - [Arguments](#lambda)
 - [Decorator](#lambda)
-- [Generator](#lambda)
+- [Generator](#generator)
 - [Annotation](#lambda)
 
 
@@ -98,4 +98,28 @@ def count(start, step):
 
 >>> next(counter), next(counter), next(counter)
 (30, 35, 40)
+```
+
+
+### Decorator
+
+```python
+>>> from functools import wraps
+>>> def decorator_func(func):
+...     @wraps(func)
+...     def wrapper(*args, **kwargs):
+...         print("Before calling {}.".format(func.__name__))
+...         ret = func(*args, **kwargs)
+...         print("After calling {}.".format(func.__name__))
+...         return ret
+...     return wrapper
+...
+>>> @decorator
+... def example():
+...     print("Inside example function.")
+...
+>>> example()
+Before calling example.
+Inside example function.
+After calling example.
 ```
