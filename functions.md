@@ -77,3 +77,25 @@ def check():
 >>> multiply(5, b=3) ## 5 * 3
 15
 ```
+
+
+### Generator
+```python
+def count(start, step):
+    while True:
+        yield start
+        start += step
+
+>>> counter = count(10, 5)
+>>> next(counter)
+(15)
+
+>>> next(counter) ## Increments by 5 from the previous result
+(20)
+
+>>> next(counter)
+(25)
+
+>>> next(counter), next(counter), next(counter)
+(30, 35, 40)
+```
