@@ -75,6 +75,6 @@ def check():
 3
 >>> multiply(5) ## 5 * 0
 0
->>> multiply(5, b=3)
+>>> multiply(5, b=3) ## 5 * 3
 15
 ```
