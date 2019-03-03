@@ -3,7 +3,7 @@
 
 
 - [Lambda](#lambda)
-- [Declare Function](#lambda)
+- [Declare Function](#declare-function)
 - [Document Function](#document-a-function)
 - [Get Function Name](#get-function-name)
 - [Arguments](#arguments)
