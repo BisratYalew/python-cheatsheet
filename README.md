@@ -5,53 +5,42 @@ Python Cheatsheet
 
 
 
-## About
-I have created this cheatsheet with intention of collecting python code snippets that I used on my projects/programs and from the internet for reducing coding hours and making other developers life easier.
+## Introduction
+I have created this cheatsheet with intention of helping other developers by sharing my python code snippets that I have used on my projects to reduce time and make life easier.
 
 
 # Basic
 
-## [String](#String)
+- ### [String](string.md)
+- ### [Number](number.md)
 
 
-<br><br>
+<br>
 
 # Intermediate
 
+- ### [File](files.md)
+- ### [Functions](functions.md)
 
-## [File](#file)
 
-<br><br>
+
+<br>
 
 
 
 # Advanced
 
-- [Regular Expressions](#regular-expressions)
-- [Socket](#socket)
+- ### [Regular Expressions](regular-expressions.md)
+- ### [Socket](socket.md)
 
 
 
 
-<br><br><br><br>
+<br><br><br>
 
 
 
 
-<br><br>
-
-
-# Intermediate
-
-
-<br><br>
-
-
-
-# Advanced
-
-<br>
-<br>
 
 ## Contributing
 
