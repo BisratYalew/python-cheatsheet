@@ -66,7 +66,6 @@ def check():
 
 
 ### Arguments
-* Default
 ```python
 >>> def multiply(a, b=0): ## b is 0 by default
 ...     return a * b
