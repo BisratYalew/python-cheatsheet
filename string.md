@@ -137,4 +137,4 @@ pip install pyperclip
 ```
 
 
-### [Back To Top](#python-functions)
+### [Back To Top](#python-strings)
