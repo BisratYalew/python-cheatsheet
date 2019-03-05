@@ -17,6 +17,7 @@ I have created this cheatsheet with intention of helping other developers by sha
 - ### [File](files.md)
 - ### [Functions](functions.md)
 - ### [Regular Expressions](regular-expressions.md)
+- ### [Web Data Handling](web-data-handling.md)
 - ### [Socket](socket.md)
 
 <br><br><br>
