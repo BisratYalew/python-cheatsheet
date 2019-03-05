@@ -39,8 +39,17 @@ if f.mode == 'r':  # file successfully opened
     parser.feed(contents)
 ```
 
+### JSON Parsing
+```python
+import json
+json_data = json.loads(response)
+```
+
 ### XML Parsing
 ```python
 import xml.dom.minidom
 doc = xml.dom.minidom.parse("check.xml")
 ```
+
+
+### [Back To Top](#web-data-handling)
