@@ -11,9 +11,9 @@
 
 # Make a Request
 ```python
-import urllib ## urllib module is used to send request and receive response from a server. It can used to get html / JSON / XML data from an api.
+import urllib.request ## urllib module is used to send request and receive response from a server. It can used to get html / JSON / XML data from an api.
 
-webData = urllib.request.urlopen("http://www.google.com") ## It opens a connectio to google.com and returns an object of class http.client.HTTPResponse
+webData = request.urlopen("http://www.google.com") ## It opens a connection to google.com and returns an object of class http.client.HTTPResponse
 ```
 
 ### Read
