@@ -48,7 +48,7 @@ json_data = json.loads(response)
 ### XML Parsing
 ```python
 import xml.dom.minidom
-doc = xml.dom.minidom.parse("check.xml")
+doc = minidom.parse("check.xml")
 ```
 
 
