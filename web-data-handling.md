@@ -3,11 +3,39 @@
 - [Make a Request](#make-a-request)
 - [Read](#read)
 - [Get Code](#get-code)
+- [HTML Parsing](#html-parsing)
+- [JSON Parsing](#json-parsing)
+- [XML Parsing](#xml-parsing)
 
 <br><br>
 
+# Make a Request
 ```python
 import urllib ## urllib module is used to send request and receive response from a server. It can used to get html / JSON / XML data from an api.
 
 webData = urllib.request.urlopen("http://www.google.com") ## It opens a connectio to google.com and returns an object of class http.client.HTTPResponse
 ```
+
+### Read
+```.read()``` return the HTML data of the webpage.
+
+### Get Code
+```.getcode()```  returns the status code of the connection establishment. 
+
+
+### HTML Parsing
+
+```python
+from html.parser import HTMLParser
+
+class MyHTMLParser(HTMLParser):
+    def error(self, message):
+        pass
+        
+parser = MyHTMLParser()
+f = open("check.html")
+if f.mode == 'r':  # file successfully opened
+    contents = f.read()
+    parser.feed(contents)
+```
+
