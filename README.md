@@ -8,33 +8,16 @@ Python Cheatsheet
 ## Introduction
 I have created this cheatsheet with intention of helping other developers by sharing my python code snippets that I have used on my projects to reduce time and make life easier.
 
+<br>
 
-# Basic
+## Cheatsheets
 
 - ### [String](string.md)
 - ### [Number](number.md)
-
-
-<br>
-
-# Intermediate
-
 - ### [File](files.md)
 - ### [Functions](functions.md)
-
-
-
-<br>
-
-
-
-# Advanced
-
 - ### [Regular Expressions](regular-expressions.md)
 - ### [Socket](socket.md)
-
-
-
 
 <br><br><br>
 
