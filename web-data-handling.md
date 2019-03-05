@@ -39,3 +39,8 @@ if f.mode == 'r':  # file successfully opened
     parser.feed(contents)
 ```
 
+### XML Parsing
+```python
+import xml.dom.minidom
+doc = xml.dom.minidom.parse("check.xml")
+```
