@@ -1,5 +1,10 @@
 # Date and Time
 
+- [DateTime](#datetime)
+- [Time Delta](#time-delta)
+- [Calendar](#calendar)
+
+<br><br>
 ### datetime
 ```python
 from datetime import date 
@@ -100,3 +105,5 @@ Output:
 Monday Tuesday Wednesday Thursday Friday Saturday Sunday
 '''
 ```
+
+### [Back To Top](#date-and-time)
