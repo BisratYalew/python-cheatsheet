@@ -1,9 +1,10 @@
 Python Cheatsheet 
-<sub>[Fork this on GitHub](https://github.com/BisratYalew/python-cheatsheet)
-</sub>
 =================
 
-![alt text](img/python-cheatsheet-image.png)
+<p align="center">
+  <img src="img/python-cheatsheet-image.png" width="350" height="300" align="center" title="Pythion cheatsheet, Developed by Bisrat Yalew">
+  
+</p>
 
 
 
