@@ -135,3 +135,64 @@ def test_class_objects():
     complex_number = ComplexNumberWithConstructor(3.0, -4.5)
     assert complex_number.real, complex_number.imaginary == (3.0, -4.5)
 ```
+
+
+
+
+
+<br><br>
+### Instance Objects
+
+```python
+def test_instance_objects():
+    # DATA ATTRIBUTES need not be declared; like local variables, they spring into existence when
+    # they are first assigned to. For example, if x is the instance of MyCounter created above,
+    # the following piece of code will print the value 16, without leaving a trace.
+
+    # pylint: disable=too-few-public-methods
+    class DummyClass:
+        pass
+
+    dummy_instance = DummyClass()
+
+    # pylint: disable=attribute-defined-outside-init
+    dummy_instance.temporary_attribute = 1
+    assert dummy_instance.temporary_attribute == 1
+    del dummy_instance.temporary_attribute
+```
+
+<br><br>
+### Method Objects
+
+```python
+class MyCounter:
+    """A simple example of the counter class"""
+    counter = 10
+
+    def get_counter(self):
+        """Return the counter"""
+        return self.counter
+
+    def increment_counter(self):
+        """Increment the counter"""
+        self.counter += 1
+        return self.counter
+
+
+def test_method_objects():
+    """Method Objects."""
+
+  
+    # object types can have methods as well. For example, list objects have methods called append,
+    
+    counter = MyCounter()
+    assert counter.get_counter() == 10
+
+    get_counter = counter.get_counter
+    assert get_counter() == 10
+
+  
+
+    assert counter.get_counter() == 10
+    assert MyCounter.get_counter(counter) == 10
+```
