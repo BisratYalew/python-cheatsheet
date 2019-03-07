@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/python-cheatsheet-image.png" width="350" height="350" align="center" title="Pythion cheatsheet, Developed by Bisrat Yalew">
+  <img src="img/python-cheatsheet-image.png" width="350" height="400" align="center" title="Pythion cheatsheet, Developed by Bisrat Yalew">
   
 </p>
 
