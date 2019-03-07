@@ -4,8 +4,7 @@
 - [Definition](#class-definition)
 - [Class Objects](#class-objects)
 - [Instance Objects](#instance-objects)
-- [Method Object](#move-a-file)
-- [Class and Instance Variables](#readline)
+- [Method Objects](#method-objects)
 - [Inheritance](#inheritance)
 - [Multiple Inheritance](#multiple-inheritance)
 
@@ -141,7 +140,7 @@ def test_class_objects():
 
 
 <br><br>
-### Instance Objects
+### Instance Object
 
 ```python
 def test_instance_objects():
@@ -195,4 +194,74 @@ def test_method_objects():
 
     assert counter.get_counter() == 10
     assert MyCounter.get_counter(counter) == 10
+```
+
+
+<br><br>
+### Inheritance
+```python
+# pylint: disable=too-few-public-methods
+class Person:
+    """Example of the base class"""
+    def __init__(self, name):
+        self.name = name
+
+    def get_name(self):
+        """Get person name"""
+        return self.name
+
+
+# The syntax for a derived class definition looks like this.
+class Employee(Person):
+    
+    def __init__(self, name, staff_id):
+        Person.__init__(self, name)
+        # You may also use super() here in order to avoid explicit using of parent class name:
+        # >>> super().__init__(name)
+        self.staff_id = staff_id
+
+    def get_full_id(self):
+        """Get full employee id"""
+        return self.get_name() + ', ' + self.staff_id
+
+
+def test_inheritance():
+    """Inheritance."""
+
+    # There’s nothing special about instantiation of derived classes: DerivedClassName() creates a
+    # new instance of the class. Method references are resolved as follows: the corresponding class
+    # attribute is searched, descending down the chain of base classes if necessary, and the method
+    # reference is valid if this yields a function object.
+    person = Person('Bisrat')
+    employee = Employee('John', 'A23')
+
+    assert person.get_name() == 'Bisrat'
+    assert employee.get_name() == 'John'
+    assert employee.get_full_id() == 'John, A23'
+
+    # Python has two built-in functions that work with inheritance:
+    #
+    # - Use isinstance() to check an instance’s type: isinstance(obj, int) will be True only if
+    # obj.__class__ is int or some class derived from int.
+    #
+    # - Use issubclass() to check class inheritance: issubclass(bool, int) is True since bool is
+    # a subclass of int. However, issubclass(float, int) is False since float is not a subclass
+    # of int.
+
+    assert isinstance(employee, Employee)
+    assert not isinstance(person, Employee)
+
+    assert isinstance(person, Person)
+    assert isinstance(employee, Person)
+
+    assert issubclass(Employee, Person)
+    assert not issubclass(Person, Employee)
+```
+
+
+
+<br><br>
+### Multiple Inheritance
+```python
+
 ```
