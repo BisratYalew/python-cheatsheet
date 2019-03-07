@@ -3,6 +3,8 @@ Python Cheatsheet
 </sub>
 =================
 
+![alt text](img/python-cheatsheet-image.png)
+
 
 
 ## Introduction
