@@ -6,7 +6,7 @@ Python Cheatsheet
 
 
 ## Introduction
-I have created this cheatsheet with intention of helping other developers by sharing my python code snippets that I have used on my projects to reduce time and make life easier.
+I have created this cheatsheet with intention of helping other developers by sharing my python code snippets that I have used on my projects to reduce time and make life easier. (written for humans)
 
 <br>
 
