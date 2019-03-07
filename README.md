@@ -1,6 +1,6 @@
 Python Cheatsheet 
-<sup>[Fork this on GitHub](https://github.com/BisratYalew/python-cheatsheet)
-</sup>
+<sub>[Fork this on GitHub](https://github.com/BisratYalew/python-cheatsheet)
+</sub>
 =================
 
 
