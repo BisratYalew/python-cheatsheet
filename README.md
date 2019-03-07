@@ -31,7 +31,7 @@ I have created this cheatsheet with intention of helping other developers by sha
 
 ## Contributing
 
-Feel free to contribute and send pull requests
+Feel free to contribute and send pull requests. Not completed will update faster!
 
 ## Author
 
