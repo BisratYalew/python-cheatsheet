@@ -10,16 +10,18 @@ I have created this cheatsheet with intention of helping other developers by sha
 
 <br>
 
-## Cheatsheets
+## Contents
 
 - ### [String](string.md)
 - ### [Number](number.md)
 - ### [File](files.md)
 - ### [Functions](functions.md)
+- ### [Classes](class.md)
 - ### [Date and Time](date-time.md)
 - ### [Regular Expressions](regular-expressions.md)
 - ### [Web Data Handling](web-data-handling.md)
 - ### [Socket](socket.md)
+
 
 <br><br><br>
 
