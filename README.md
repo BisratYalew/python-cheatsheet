@@ -16,7 +16,7 @@ I have created this cheatsheet with intention of helping other developers by sha
 - ### [Number](number.md)
 - ### [File](files.md)
 - ### [Functions](functions.md)
-- ### [Classes](class.md)
+- ### [Classes](classes.md)
 - ### [Date and Time](date-time.md)
 - ### [Regular Expressions](regular-expressions.md)
 - ### [Web Data Handling](web-data-handling.md)
