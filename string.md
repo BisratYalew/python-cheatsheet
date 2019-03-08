@@ -58,7 +58,7 @@
 >>> 'Python' in 'Python is great!'
 True
 >>> 'python' in 'Python'
-True
+False
 >>> 'PYTHON' in 'Python is great!'
 False
 >>> '' in 'python'
