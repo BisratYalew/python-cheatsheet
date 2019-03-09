@@ -13,7 +13,7 @@ I have created this cheatsheet with intention of helping other developers by sha
 ## Contents
 
 - ### [String](string.md)
-- ### [Number](number.md)
+- ### [Number](numbers.md)
 - ### [File](files.md)
 - ### [Functions](functions.md)
 - ### [Classes](classes.md)
