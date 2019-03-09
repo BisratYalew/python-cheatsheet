@@ -81,4 +81,42 @@ s.close()
 print('connection closed')
 ```
 
+<br><br>
+
+### FTP Server
+```python
+"""
+	File transfer protocol used to send and receive files using FTP server.
+	Use credentials to provide access to the FTP client	
+"""
+
+from ftplib import FTP
+ftp = FTP('xxx.xxx.x.x')  # Enter the ip address or the domain name here
+ftp.login(user='username', passwd='password')
+ftp.cwd('/Enter the directory here/')
+
+"""
+	The file which will be received via the FTP server
+	Enter the location of the file where the file is received
+"""
+
+def recieve_file():
+	file_name = 'example.txt'   """ Enter the location of the file """
+	with open(file_name, 'wb') as LocalFile:
+		ftp.retrbinary('RETR ' + file_name, LocalFile.write, 1024)
+	ftp.quit()
+
+"""
+	The file which will be sent via the FTP server
+	The file send will be send to the current working directory
+"""
+
+def send_file():
+	file_name = 'example.txt'   """ Enter the name of the file """
+	with open(file_name, 'rb') as LocalFile:
+		ftp.storbinary('STOR ' + file_name, LocalFile)
+	ftp.quit()
+
+```
+<br><br>
 ### [Back To Top](#socket)
