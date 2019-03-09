@@ -1,6 +1,8 @@
 
 # Socket
 - [Get Hostname](#get-hostname)
+- [File Transfer Protocol (ftp) client](#ftp-client)
+- [File Transfer Protocol (ftp) server](#ftp-server)
 
 <br><br>
 ### Get Hostname
