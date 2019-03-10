@@ -64,7 +64,7 @@ False
 >>> '' in 'python'
 True
 >>> 'Python' not in 'python and javascript' ## Matches case
-False
+True
 ```
 
 #### The in and not in Operators with list
