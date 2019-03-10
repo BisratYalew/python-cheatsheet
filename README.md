@@ -20,6 +20,7 @@ I have created this cheatsheet with intention of helping other developers by sha
 - ### [Date and Time](date-time.md)
 - ### [Regular Expressions](regular-expressions.md)
 - ### [Web Data Handling](web-data-handling.md)
+- ### [Asyncio](asyncio.md)
 - ### [Socket](socket.md)
 
 
